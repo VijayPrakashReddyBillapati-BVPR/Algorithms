@@ -29,6 +29,7 @@ public class StacksImpl<T> implements Stacks<T> {
 
 	@Override
 	public T pop() {
+		System.out.println(top);
 		if(top <= 0)
 		{
 			System.out.println("Stack Underflow");
