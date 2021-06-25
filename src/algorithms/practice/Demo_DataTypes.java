@@ -5,8 +5,8 @@ package algorithms.practice;
 
 import java.util.Random;
 
-import algorithms.practice.sort.selection.insertionsort.Insertion;
-import algorithms.practice.sort.selection.insertionsort.InsertionSort;
+import algorithms.practice.sort.arrays.selection.insertionsort.Insertion;
+import algorithms.practice.sort.arrays.selection.insertionsort.InsertionSort;
 
 /**
  * @author vbillapa

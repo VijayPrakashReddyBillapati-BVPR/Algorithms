@@ -1,7 +1,7 @@
 /**
  * 
  */
-package algorithms.practice.search;
+package algorithms.practice.search.arrays;
 
 /**
  * @author vbillapa

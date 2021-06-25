@@ -1,4 +1,4 @@
-package algorithms.practice.sort.selection.insertionsort;
+package algorithms.practice.sort.arrays.selection.insertionsort;
 
 import java.util.Comparator;
 

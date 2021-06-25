@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import algorithms.practice.pojo.Student;
+import algorithms.practice.sort.arrays.selection.insertionsort.Insertion;
+import algorithms.practice.sort.arrays.selection.insertionsort.InsertionSort;
 import algorithms.practice.sort.collections.insertion.InsertionSortC;
-import algorithms.practice.sort.selection.insertionsort.Insertion;
-import algorithms.practice.sort.selection.insertionsort.InsertionSort;
 
 public class Demo_CustomObjects {
 
