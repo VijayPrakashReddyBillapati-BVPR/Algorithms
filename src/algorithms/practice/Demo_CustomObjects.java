@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import algorithms.practice.examples.Student;
-import algorithms.practice.sort.Insertion;
-import algorithms.practice.sort.InsertionSort;
+import algorithms.practice.pojo.Student;
+import algorithms.practice.sort.collections.insertion.InsertionSortC;
+import algorithms.practice.sort.selection.insertionsort.Insertion;
+import algorithms.practice.sort.selection.insertionsort.InsertionSort;
 
-public class Demo {
+public class Demo_CustomObjects {
 
 	public static void main(String[] args) {
 
@@ -29,12 +30,16 @@ public class Demo {
 		
 		Insertion<Student> insertion_str = new InsertionSort<Student>();
 		insertion_str.Sort(studentList, Student.SortBySalary);
-//		Arrays.sort(studentList);
-//		Arrays.sort(studentList, Student.SortBySalary);
+		Arrays.sort(studentList);
+		Arrays.sort(studentList, Student.SortBySalary);
 		for(Student student:studentList) {
 			System.out.println(student.toString());
 		}
-
+		
+		InsertionSortC.sort(studentList_1,Student.SortBySalary);
+		for(Student student:studentList_1) {
+			System.out.println(student.toString());
+		}
 	}
 
 }

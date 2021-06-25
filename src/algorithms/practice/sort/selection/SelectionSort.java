@@ -1,4 +1,4 @@
-package algorithms.practice.sort;
+package algorithms.practice.sort.selection;
 
 public class SelectionSort implements Selection {
 

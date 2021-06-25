@@ -1,8 +1,8 @@
-package algorithms.practice.sort;
+package algorithms.practice.sort.selection.insertionsort;
 
 import java.util.Comparator;
 
-public interface Insertion <T>{
+public interface Insertion <T extends Comparable<? super T>>{
 
 	public void Sort(T[] ArrayToSort);
 	
@@ -11,8 +11,6 @@ public interface Insertion <T>{
 	public void Reverse(T[] ArrayToSort);
 	
 	public void Reverse(T[] ArrayToSort,Comparator<T> Comparator);
-	
-	
 	
 	public static Comparator<String> IgnoreCase = new Comparator<String>() {
 		@Override

@@ -1,4 +1,4 @@
-package algorithms.practice.examples;
+package algorithms.practice.pojo;
 
 import java.util.Comparator;
 

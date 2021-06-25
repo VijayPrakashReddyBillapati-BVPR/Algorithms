@@ -5,14 +5,14 @@ package algorithms.practice;
 
 import java.util.Random;
 
-import algorithms.practice.sort.Insertion;
-import algorithms.practice.sort.InsertionSort;
+import algorithms.practice.sort.selection.insertionsort.Insertion;
+import algorithms.practice.sort.selection.insertionsort.InsertionSort;
 
 /**
  * @author vbillapa
  *
  */
-public class MainClass {
+public class Demo_DataTypes {
 
 	/**
 	 * @param args

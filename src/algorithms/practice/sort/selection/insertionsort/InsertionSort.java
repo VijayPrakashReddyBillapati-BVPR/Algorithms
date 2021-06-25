@@ -1,9 +1,8 @@
-package algorithms.practice.sort;
+package algorithms.practice.sort.selection.insertionsort;
 
 import java.util.Comparator;
 
 public final class InsertionSort<T extends Comparable<? super T>> implements Insertion<T> {
-
 	public InsertionSort() {}
 
 	public void Sort(T[] a) {
@@ -32,6 +31,7 @@ public final class InsertionSort<T extends Comparable<? super T>> implements Ins
 
 	@Override
 	public void Sort(T[] a, Comparator<T> Comparator) {
+		System.out.println("************************************************************************************");
 		if(a.length <1 || a == null) {
 			return;
 		}
@@ -83,6 +83,5 @@ public final class InsertionSort<T extends Comparable<? super T>> implements Ins
 				}
 			}
 		
-	}
-
+	}	
 }
