@@ -29,7 +29,6 @@ public class StacksImpl<T> implements Stacks<T> {
 
 	@Override
 	public T pop() {
-		System.out.println(top);
 		if(top <= 0)
 		{
 			System.out.println("Stack Underflow");
@@ -38,7 +37,7 @@ public class StacksImpl<T> implements Stacks<T> {
 		store[top--]=null;
 		if(capacity/4 > top)
 		{
-			reSize(capacity/4);
+			reSize(capacity/2);
 		}
 		return value;
 	}
