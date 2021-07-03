@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import algorithms.practice.pojo.Student;
+import algorithms.practice.sort.arrays.merge.MergeSort;
+import algorithms.practice.sort.arrays.merge.MergeSortImpl;
 import algorithms.practice.sort.arrays.selection.insertionsort.Insertion;
 import algorithms.practice.sort.arrays.selection.insertionsort.InsertionSort;
 import algorithms.practice.sort.collections.insertion.InsertionSortC;
@@ -29,15 +31,24 @@ public class Demo_CustomObjects {
 		studentList_1.add(student_5);
 		
 		Insertion<Student> insertion_str = new InsertionSort<Student>();
+		System.out.println("\n"+" *****************  InsertionSort arrays **************************"+"\n");
 		insertion_str.Sort(studentList, Student.SortBySalary);
-		Arrays.sort(studentList);
-		Arrays.sort(studentList, Student.SortBySalary);
+//		Arrays.sort(studentList);
+//		Arrays.sort(studentList, Student.SortBySalary);
 		for(Student student:studentList) {
 			System.out.println(student.toString());
 		}
 		
+		System.out.println("\n"+" *****************  InsertionSort collection **************************"+"\n");
 		InsertionSortC.sort(studentList_1,Student.SortBySalary);
 		for(Student student:studentList_1) {
+			System.out.println(student.toString());
+		}
+		
+		System.out.println("\n"+" *****************  MergSort **************************"+"\n");
+		MergeSort<Student> mergsort = new MergeSortImpl<Student>();
+		mergsort.sort(studentList,Student.SortById);
+		for(Student student:studentList) {
 			System.out.println(student.toString());
 		}
 	}
