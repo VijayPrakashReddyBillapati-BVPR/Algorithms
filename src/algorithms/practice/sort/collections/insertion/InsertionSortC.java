@@ -20,7 +20,6 @@ public final class InsertionSortC {
 	 System.out.println(a[0]);
 	 sort(a,0,a.length,c);
 	 System.out.println(a[0]);
-	 System.out.println("***********************************************************************88");
 	 ListIterator<T> i = l.listIterator();
 	 for (int pos = 0, alen = a.length;  pos < alen;  pos++)
 	 {

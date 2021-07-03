@@ -31,7 +31,6 @@ public final class InsertionSort<T extends Comparable<? super T>> implements Ins
 
 	@Override
 	public void Sort(T[] a, Comparator<T> Comparator) {
-		System.out.println("************************************************************************************");
 		if(a.length <1 || a == null) {
 			return;
 		}
@@ -83,5 +82,29 @@ public final class InsertionSort<T extends Comparable<? super T>> implements Ins
 				}
 			}
 		
+	}
+
+	@Override
+	public void sort(T[] a, int low, int high, Comparator<? super T> comparator) {
+		if(a.length <1 || a == null) {
+			return;
+		}
+		for(int i=low+1;i<=high;i++) {
+			for(int j=i;j>low;j--) {
+				if(less(a[j],a[j-1],comparator)) { //if(comparator.compare(a[j],a[j-1])<0) {
+					exchange(a,j,j-1);
+				}
+				else break;
+			}
+		}
+		
+	}
+
+	private boolean less(T t, T t2, Comparator<? super T> comparator) {
+		if(comparator==null)
+		{
+			return t.compareTo(t2)<0;
+		}
+		return comparator.compare(t, t2)<0;
 	}	
 }
