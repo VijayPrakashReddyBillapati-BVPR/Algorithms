@@ -1,4 +1,4 @@
-package algorithms.practice.sort.arrays.selection.insertionsort;
+package algorithms.practice.sort.arrays.insertionsort;
 
 import java.util.Comparator;
 
@@ -22,4 +22,5 @@ public interface Insertion <T extends Comparable<? super T>>{
 	};
 
 	public void sort(T[] array, int low, int high, Comparator<? super T> comparator);
+
 }

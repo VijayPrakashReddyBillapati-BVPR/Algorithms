@@ -1,4 +1,4 @@
-package algorithms.practice.sort.arrays.selection.insertionsort;
+package algorithms.practice.sort.arrays.insertionsort;
 
 import java.util.Comparator;
 
@@ -106,5 +106,6 @@ public final class InsertionSort<T extends Comparable<? super T>> implements Ins
 			return t.compareTo(t2)<0;
 		}
 		return comparator.compare(t, t2)<0;
-	}	
+	}
+
 }

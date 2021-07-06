@@ -5,10 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 import algorithms.practice.pojo.Student;
+import algorithms.practice.sort.arrays.insertionsort.Insertion;
+import algorithms.practice.sort.arrays.insertionsort.InsertionSort;
 import algorithms.practice.sort.arrays.merge.MergeSort;
 import algorithms.practice.sort.arrays.merge.MergeSortImpl;
-import algorithms.practice.sort.arrays.selection.insertionsort.Insertion;
-import algorithms.practice.sort.arrays.selection.insertionsort.InsertionSort;
 import algorithms.practice.sort.collections.insertion.InsertionSortC;
 
 public class Demo_CustomObjects {
