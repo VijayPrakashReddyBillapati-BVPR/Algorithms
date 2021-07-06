@@ -2,8 +2,8 @@ package algorithms.practice.sort.arrays.merge;
 
 import java.util.Comparator;
 
-import algorithms.practice.sort.arrays.selection.insertionsort.Insertion;
-import algorithms.practice.sort.arrays.selection.insertionsort.InsertionSort;
+import algorithms.practice.sort.arrays.insertionsort.Insertion;
+import algorithms.practice.sort.arrays.insertionsort.InsertionSort;
 
 public class MergeSortImpl_1<T extends Comparable<? super T>> implements MergeSort<T> {
 	
