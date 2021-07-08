@@ -18,7 +18,7 @@ public class Demo {
 		System.out.println(" MINHEAP min() "+heaps.min());
 		System.out.println();
 		
-		int[] a = new int[20];
+		Integer[] a = new Integer[20];
 		for(int i=0; i<20;i++)
 		{
 			int value = rand.nextInt(40);
@@ -35,7 +35,12 @@ public class Demo {
 		System.out.println();
 		System.out.println(" MAXHEAP max() "+heap.max());
 		System.out.println(" MINHEAP min() "+heaps.min());
+		System.out.println();
 		
+		HeapSort<Integer> heapsort = new HeapSort<Integer>();
+		heapsort.sort(a);
+		System.out.println(Arrays.toString(a));
 	}
+	
 
 }

@@ -107,4 +107,6 @@ public class BinaryMinHeap<T extends Comparable<? super T>> implements BinaryHea
 			k=j;
 		}
 	}
+
+	
 }
